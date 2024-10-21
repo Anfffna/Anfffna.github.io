@@ -110,72 +110,6 @@ v{
 	bottom: 148px;
 }
 
-/* .scrolling-wrapper {
-	overflow-x: scroll;
-	overflow-y:scroll;
-	white-space: nowrap;
-  
-	.card {
-	  display:inline-flex;
-	  text-align: center;
-	}
-}
-
-.risunki{
-	height: 700px;
-	position:absolute;
-	left: 175px;
-	top: 500px;
-} */
-
-/* для карандаша */
-
-  .slider-container__pencil {
-	position: relative;
-	width: 30%;
-	height: 100%;
-	margin: 0 auto;
-	overflow: hidden;
-	z-index: 22;
-	top: -8930px;
-	left: 0px;
-  }
-  
-  .slider__pencil {
-	display: flex;
-	transition: transform 0.5s ease-in-out;
-  }
-  
-  .slider__pencil img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	margin: auto;
-  }
-  
-  .prev-button,
-  .next-button {
-	position: absolute;
-	top: 55%;
-	transform: translateY(-50%);
-	width: 50px;
-	height: 50px;
-	background-color: white;
-	border: 2;
-	font-size: 36px;
-	color: black;
-  }
-  
-  .prev-button {
-	left: 20px;
-	margin-left: -20px;
-  }
-  
-  .next-button {
-	right: 20px;
-	margin-right: -20px;
-  }
-
 /* модальное окно */
 
 .modal {
@@ -215,48 +149,78 @@ h1 {
 	top: 240px;
 }
 
-/* для масла, не работает */
+/*слайдур №1,№2,№3*/
 
-  .slider-container__maslo {
-	position: relative;
-	width: 30%;
-	height: 100%;
-	margin: 0 auto;
-	overflow: hidden;
-	z-index: 22;
-	top: -8730px;
-	left: 0px;
-  }
-  
-  .slider__maslo {
-	display: flex;
-	transition: transform 0.5s ease-in-out;
-  }
-  
-  .slider__maslo img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	margin: auto;
-  }
+.slider1 {
+    position: relative;
+    width: 450px;
+    margin: 390px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
 
-  .prev-button,
-  .next-button {
-	position: absolute;
-	top: 55%;
-	transform: translateY(-50%);
-	width: 50px;
-	height: 50px;
-	background-color: white;
-	border: 2;
-	font-size: 36px;
-	color: black;
-  }
-  
-  .prev-button {
-	left: 20px;
-  }
-  
-  .next-button {
-	right: 20px;
-  }
+.slider2 {
+    position: relative;
+    width: 470px;
+    margin: -205px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider3 {
+    position: relative;
+    width: 450px;
+    margin: 410px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: -30px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* настройка фона */
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 76.5%;
+	margin-top: 105px;
+	margin-left: 177px;
+    object-fit: contain; /* Помещает изображение полностью, сохраняя его пропорции */
+}

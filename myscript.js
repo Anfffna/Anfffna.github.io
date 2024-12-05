@@ -1,65 +1,71 @@
-var modal= document.getElementById('myModal');
-var close= document.getElementById('myClose');
-close.onclick= function() {
-  modal.style.display = "none";
-}
+// ===== Модальное окно =====
 
-//переключение фото при наведении Главная страница
-document.getElementById("moe_foto").addEventListener("mouseover", function() {
-    this.src = "./images/ya.png";  // Меняем изображение при наведении
-});
+// Получаем элементы модального окна и кнопки закрытия
+var modal = document.getElementById('myModal');
+var close = document.getElementById('myClose');
 
-document.getElementById("moe_foto").addEventListener("mouseout", function() {
-    this.src = "./images/ya2.png";  // Возвращаем исходное изображение
-});
+// Закрытие модального окна при клике на кнопку "Закрыть"
+close.onclick = function() {
+    modal.style.display = "none";
+};
 
+// ===== Изменение фото на главной странице при наведении =====
 
-//обработка события наведения мыши на фото
-// Ждем, когда весь контент страницы загрузится
+// Добавляем обработчики событий после загрузки страницы
 document.addEventListener("DOMContentLoaded", function() {
-    // Находим элемент по ID
+    // Находим элемент с фото
     const foto = document.getElementById("moe_foto");
 
-    // Проверяем, найден ли элемент
     if (foto) {
-        console.log("Элемент найден");
+        // Логируем успешное нахождение элемента
+        console.log("Элемент moe_foto найден");
 
-        // Добавляем обработчик события для mouseover
+        // Изменяем фото при наведении
         foto.addEventListener("mouseover", function() {
             console.log("Наведение на изображение");
-            this.src = "./images/ya.png";  // Изменяем изображение при наведении
+            this.src = "./images/ya.png"; // Новое изображение
         });
 
-        // Добавляем обработчик события для mouseout
+        // Возвращаем исходное фото при убирании курсора
         foto.addEventListener("mouseout", function() {
             console.log("Убрал курсор с изображения");
-            this.src = "./images/ya2.png";  // Возвращаем исходное изображение
+            this.src = "./images/ya2.png"; // Исходное изображение
         });
     } else {
-        console.log("Элемент не найден");
+        // Логируем, если элемент не найден
+        console.log("Элемент moe_foto не найден");
     }
 });
 
+// ===== Слайдеры =====
 
-
-// Объект для хранения индексов слайдов для каждого слайдера
+// Объект для хранения текущих индексов слайдов каждого слайдера
 let slideIndex = {
     slider1: 0,
     slider2: 0,
-    slider3: 0 
+    slider3: 0
 };
 
-// Функция для переключения слайдов (принимает идентификатор слайдера и направление)
+// Функция переключения слайдов
 function plusSlides(sliderId, n) {
+    // Обновляем индекс текущего слайда
     slideIndex[sliderId] += n;
+    // Отображаем обновленный слайд
     showSlides(sliderId);
 }
 
-// Функция для отображения слайдов (принимает идентификатор слайдера)
+// Функция отображения слайдов
 function showSlides(sliderId) {
+    // Получаем все слайды внутри указанного слайдера
     const slides = document.querySelectorAll(`#${sliderId} .slide`);
-    
-    // Циклическая прокрутка слайдов
+
+    // Проверяем, если слайды существуют
+    if (slides.length === 0) {
+        console.error(`Слайды для слайдера ${sliderId} не найдены.`);
+        return;
+    }
+
+    // Циклическая прокрутка: если индекс выходит за границы массива, сбрасываем его
     if (slideIndex[sliderId] >= slides.length) {
         slideIndex[sliderId] = 0;
     }
@@ -69,11 +75,22 @@ function showSlides(sliderId) {
 
     // Рассчитываем сдвиг слайдов по горизонтали
     const offset = -slideIndex[sliderId] * 100;
-    document.querySelector(`#${sliderId} .slides`).style.transform = `translateX(${offset}%)`;
+
+    // Применяем сдвиг к контейнеру слайдов
+    const slidesContainer = document.querySelector(`#${sliderId} .slides`);
+    if (slidesContainer) {
+        slidesContainer.style.transform = `translateX(${offset}%)`;
+        slidesContainer.style.transition = "transform 0.5s ease"; // Плавный переход
+    } else {
+        console.error(`Контейнер слайдов для ${sliderId} не найден.`);
+    }
 }
 
-// Изначально отображаем первый слайд для всех трех слайдеров
-showSlides('slider1');
-showSlides('slider2');
-showSlides('slider3'); 
+// Инициализация всех слайдеров при загрузке страницы
+document.addEventListener("DOMContentLoaded", function() {
+    showSlides('slider1');
+    showSlides('slider2');
+    showSlides('slider3');
+});
+
 

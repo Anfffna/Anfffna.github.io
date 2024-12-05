@@ -1,0 +1,14 @@
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\bin\Debug\net8.0\КДЗ_№7(лабиринт).exe
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\bin\Debug\net8.0\КДЗ_№7(лабиринт).deps.json
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\bin\Debug\net8.0\КДЗ_№7(лабиринт).runtimeconfig.json
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\bin\Debug\net8.0\КДЗ_№7(лабиринт).dll
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\bin\Debug\net8.0\КДЗ_№7(лабиринт).pdb
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\obj\Debug\net8.0\КДЗ_№7(лабиринт).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\obj\Debug\net8.0\КДЗ_№7(лабиринт).AssemblyInfoInputs.cache
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\obj\Debug\net8.0\КДЗ_№7(лабиринт).AssemblyInfo.cs
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\obj\Debug\net8.0\КДЗ_№7(лабиринт).csproj.CoreCompileInputs.cache
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\obj\Debug\net8.0\КДЗ_№7(лабиринт).dll
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\obj\Debug\net8.0\refint\КДЗ_№7(лабиринт).dll
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\obj\Debug\net8.0\КДЗ_№7(лабиринт).pdb
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\obj\Debug\net8.0\КДЗ_№7(лабиринт).genruntimeconfig.cache
+C:\Users\Pokemon's\Desktop\коды на С# (кр, дз)\ДЗ\КДЗ_№7(лабиринт)\КДЗ_№7(лабиринт)\obj\Debug\net8.0\ref\КДЗ_№7(лабиринт).dll

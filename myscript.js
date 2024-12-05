@@ -4,42 +4,37 @@ close.onclick= function() {
   modal.style.display = "none";
 }
 
+// Объект для хранения индексов слайдов для каждого слайдера
+let slideIndex = {
+    slider1: 0,
+    slider2: 0,
+    slider3: 0 
+};
 
-
-// Получаем элементы слайдера
-const slider = document.querySelector('.slider__pencil');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-const slides = Array.from(slider.querySelectorAll('img'));
-const slideCount = slides.length;
-let slideIndex = 0;
-
-// Устанавливаем обработчики событий для кнопок
-prevButton.addEventListener('click', showPreviousSlide);
-nextButton.addEventListener('click', showNextSlide);
-
-// Функция для показа предыдущего слайда
-function showPreviousSlide() {
-  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
-  updateSlider();
+// Функция для переключения слайдов (принимает идентификатор слайдера и направление)
+function plusSlides(sliderId, n) {
+    slideIndex[sliderId] += n;
+    showSlides(sliderId);
 }
 
-// Функция для показа следующего слайда
-function showNextSlide() {
-  slideIndex = (slideIndex + 1) % slideCount;
-  updateSlider();
-}
-
-// Функция для обновления отображения слайдера
-function updateSlider() {
-  slides.forEach((slide, index) => {
-    if (index === slideIndex) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
+// Функция для отображения слайдов (принимает идентификатор слайдера)
+function showSlides(sliderId) {
+    const slides = document.querySelectorAll(`#${sliderId} .slide`);
+    
+    // Циклическая прокрутка слайдов
+    if (slideIndex[sliderId] >= slides.length) {
+        slideIndex[sliderId] = 0;
     }
-  });
+    if (slideIndex[sliderId] < 0) {
+        slideIndex[sliderId] = slides.length - 1;
+    }
+
+    // Рассчитываем сдвиг слайдов по горизонтали
+    const offset = -slideIndex[sliderId] * 100;
+    document.querySelector(`#${sliderId} .slides`).style.transform = `translateX(${offset}%)`;
 }
 
-// Инициализация слайдера
-updateSlider();
+// Изначально отображаем первый слайд для всех трех слайдеров
+showSlides('slider1');
+showSlides('slider2');
+showSlides('slider3'); 

@@ -19,45 +19,49 @@
     </div>
 </header>
 <body>
-    <!-- <div class="scrolling-wrapper">
-        <div class="card">
-            <img class='risunki' src="./images/karandash.png">
-        </div>
-    </div> -->
-    <img class='centr_izobr' src='./images/moi_raboti.png'>
     <a href="мои работы.html" ><img class="vverh" src="./images/vverh.png"></a>
 
     <main>
-        <section class="slider-container__pencil">
-            <div class="slider__pencil">
-                <img src="/images/карандаш1.png">
-                <img src="/images/карандаш2.png">
-                <img src="/images/карандаш3.png">
-                <img src="/images/карандаш4.png">
-                <img src="/images/карандаш5.png">
-                <img src="/images/карандаш6.png">
-                <img src="/images/карандаш7.png">
-                <img src="/images/карандаш8.png">
-                <img src="/images/карандаш9.png">
+        <img src="./images/moi_raboti.png" alt="background" class="background-img">
+        <div id="slider1" class="slider1">
+            <div class="slides">
+                <div class="slide"><img src="/images/карандаш1.png"></div>
+                <div class="slide"><img src="/images/карандаш2.png"></div>
+                <div class="slide"><img src="/images/карандаш3.png"></div>
+                <div class="slide"><img src="/images/карандаш4.png"></div>
+                <div class="slide"><img src="/images/карандаш5.png"></div>
+                <div class="slide"><img src="/images/карандаш6.png"></div>
+                <div class="slide"><img src="/images/карандаш9.png"></div>
             </div>
-            <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-            <button class="next-button" aria-label="Посмотреть следующий слайд">&gt;</button>
-        </section>
-
-       <!--второй слайдер????-->
-        <section class="slider-container__maslo">
-            <div class="slider__maslo">
-                <img src="/images/масло1.png">
-                <img src="/images/масло2.png">
-                <img src="/images/масло3.png">
-                <img src="/images/масло4.png">
-                <img src="/images/масло5.png">
-                <img src="/images/масло6.png">
+            <a class="prev" onclick="plusSlides('slider1', -1)">&#10094;</a>
+            <a class="next" onclick="plusSlides('slider1', 1)">&#10095;</a>
+        </div>
+        
+        <div id="slider2" class="slider2">
+            <div class="slides">
+                <div class="slide"><img src="/images/масло1.png"></div>
+                <div class="slide"><img src="/images/масло2.png"></div>
+                <div class="slide"><img src="/images/масло3.png"></div>
+                <div class="slide"><img src="/images/масло4.png"></div>
+                <div class="slide"><img src="/images/масло5.png"></div>
+                <div class="slide"><img src="/images/масло6.png"></div>
             </div>
-            <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-            <button class="next-button" aria-label="Посмотреть следующий слайд">&gt;</button>
-        </section>
-        <!--???-->
+            <a class="prev" onclick="plusSlides('slider2', -1)">&#10094;</a>
+            <a class="next" onclick="plusSlides('slider2', 1)">&#10095;</a>
+        </div>
+        
+        <div id="slider3" class="slider3">
+            <div class="slides">
+                <div class="slide"><img src="/images/акварель1.png"></div>
+                <div class="slide"><img src="/images/акварель2.png"></div>
+                <div class="slide"><img src="/images/акварель3.png"></div>
+                <div class="slide"><img src="/images/акварель4.png"></div>
+                <div class="slide"><img src="/images/акварель5.png"></div>
+            </div>
+            <a class="prev" onclick="plusSlides('slider3', -1)">&#10094;</a>
+            <a class="next" onclick="plusSlides('slider3', 1)">&#10095;</a>
+        </div>
+    
     </main>
 
     <div id="myModal" class="modal">

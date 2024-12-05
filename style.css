@@ -1,262 +1,289 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap'); 
+ 
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
 
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{ 
+    background-color: black; 
+    text-align: center; 
+} 
+ 
+ul { 
+ font-family:'Trebuchet MS'; 
+ font-size: 26px; 
+ margin-right:35px; 
+ padding-left: 65px; 
+    color:rgb(255, 255, 255); 
+} 
+ 
+p { 
+ font-family:'Trebuchet MS'; 
+ font-weight:700; 
+    font-size: 118px; 
+    color:rgb(209, 178, 231); 
+ padding-left: 600px; 
+ position: absolute; 
+ left: 30px; 
+ top: 20px; 
+ transform: (30px,100px); 
+} 
+ 
+.header__logo { 
+ max-width: 70px; 
+ margin-left: -135px; 
+} 
+ 
+.menu_list{ 
+ text-align: center;
+} 
 
-body{
-    background-color: black;
-	text-align: center;
+.menu__list a {
+    display: inline-block; /* Делаем элементы горизонтальными */
+    margin: 0 50px; /* Расстояние в 100px между заголовками */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: rgb(255, 255, 255); /* Цвет текста */
+    font-family: 'Trebuchet MS'; 
+    font-size: 26px;
+}
+ 
+.header__menu { 
+ flex: 1 1 auto; 
+} 
+ 
+.moe_foto{ 
+ position: fixed; 
+ top: 200px; 
+ left: 140px; 
+ width: 450px; 
+ height: 550; 
+ margin-top: -40px; 
+} 
+ 
+.fon { 
+ text-align: center; 
+ width: 1460px; 
+ height: 400px; 
+  } 
+ 
+.sobi{ 
+ width: 320px; 
+ padding-left: 950px; 
+ padding-top: 50px; 
+} 
+
+.centr_izobr{ 
+ text-align: center; 
+ width: 77%; 
+ z-index: 12; 
+ margin-left: -30px; 
+} 
+ 
+.vverh{ 
+ position: fixed; 
+ right: 25px; 
+ top:650px; 
+ width: 130px; 
+ z-index: 14; 
+} 
+ 
+.vverh2{ 
+ position: absolute; 
+ right: 250px; 
+ top: 1670px; 
+ width: 65px; 
+ z-index: 14; 
+} 
+ 
+/* Стиль для ссылок */
+.link-telegram, .link-vk {
+    font-family: 'Trebuchet MS';
+    font-size: 39px;
+    color: #c300ff;  /* Основной цвет ссылки */
+    position: absolute;
+    text-decoration: none;
 }
 
-ul,
+.link-telegram {
+    left: 435px;
+    bottom: 224px;
+}
+
+.link-vk {
+    left: 435px;
+    bottom: 142px;
+}
+
+/* Эффект при наведении */
+.link-telegram:hover, .link-vk:hover {
+    color: #ffffff;  /* Цвет при наведении */
+    text-decoration: underline;  /* Подчеркивание при наведении */
+}
+ 
+/* модальное окно */ 
+ 
+.modal { 
+ position:fixed; 
+ left:0; 
+ top:0; 
+ width: 100%; 
+ height: 100%; 
+ background-color: rgba(73, 28, 131, 0.4); 
+ z-index: 35; 
+  } 
+ 
+.modal_content { 
+ width: 40%; 
+ height: 31%; 
+ margin: 16.4% auto; 
+ background-color:rgb(142, 127, 156); 
+  } 
+ 
+.close { 
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+ font-size: 55px; 
+ color: rgb(211, 14, 175); 
+ float: right; 
+ cursor: grab; 
+ padding-right: 15px; 
+ padding-top: -15px; 
+  } 
+ 
+h1 { 
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+ font-size: 28px; 
+ color:rgb(255, 255, 255); 
+ position: absolute; 
+ z-index: 36; 
+ left: 500px; 
+ top: 240px; 
+} 
+ 
+/*слайдур №1,№2,№3*/ 
+ 
+.slider1 { 
+    position: relative; 
+    width: 450px; 
+    margin: 440px auto; 
+    overflow: hidden; 
+    border-radius: 10px; 
+} 
+ 
+.slider2 { 
+    position: relative; 
+    width: 470px; 
+    margin: -240px auto; 
+    overflow: hidden; 
+    border-radius: 10px; 
+} 
+ 
+.slider3 { 
+    position: relative; 
+    width: 450px; 
+    margin: 450px auto; 
+    overflow: hidden; 
+    border-radius: 10px; 
+} 
+ 
+.slides { 
+    display: flex; 
+    transition: transform 0.5s ease-in-out; 
+} 
+ 
+.slide { 
+    min-width: 100%; 
+} 
+ 
+.slide img { 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 10px; 
+    object-fit: contain; 
+} 
+ 
+.prev, .next { 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 15px; 
+    cursor: pointer; 
+    border-radius: 50%; 
+} 
+ 
+.prev { 
+    left: 5px; 
+} 
+ 
+.next { 
+    right: 5px; 
+} 
+ 
+.prev:hover, .next:hover { 
+    background-color: rgba(0, 0, 0, 0.8); 
+} 
+ 
+/* настройка фона */ 
+.background-img { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 76.5%; 
+    margin-top: 105px; 
+    margin-left: 160px; 
+    object-fit: contain; /* Помещает изображение полностью, сохраняя его пропорции */ 
+}
+
+
+/* стили для tel */
+.phone {
+    font-family: 'Trebuchet MS'; 
+    font-size: 39px; 
+    position: absolute; 
+    left: 708px; 
+    bottom: 142px;
+    color: #c300ff;
+    text-decoration: none; 
+}
+
+.phone:hover {
+    text-decoration: underline; /* подчеркивание при наведении */
+    color: #ffffff; /* Цвет при наведении */
+}
+
+/* Стили для mailto */
+span {
+    font-family: 'Trebuchet MS'; 
+    font-size: 39px; 
+    position: absolute; 
+    left: 708px; 
+    bottom: 223px;
+    color: #c300ff;
+    text-decoration: none; 
+}
+
+span:hover {
+    text-decoration: underline; /* подчеркивание при наведении */
+    color: #ffffff; /* Цвет при наведении */
+}
+
+/* Стиль для mailto-ссылки */
+.mailto-link {
+    text-decoration: none;
+}
+
+.mailto-link:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+    color: #ffffff; /* Цвет при наведении */
+}
+
+/* Стили для остальных ссылок */
 a {
-	font-family:'Trebuchet MS';
-	font-size: 26px;
-	margin-right:35px;
-	padding-left: 65px;
-    color:rgb(255, 255, 255);
+    text-decoration: none;
+    color: #c300ff; /* Цвет ссылки */
 }
 
-p {
-	font-family:'Trebuchet MS';
-	font-weight:700;
-    font-size: 118px;
-    color:rgb(209, 178, 231);
-	padding-left: 600px;
-	position: absolute;
-	left: 30px;
-	top: 20px;
-	transform: (30px,100px);
+a:hover {
+    color: #c300ff; /* Цвет при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении */
 }
 
-.header__logo {
-	max-width: 70px;
-	margin-left: -135px;
-}
-
-.menu_list{
-	text-align: center;
-}
-
-.header__menu {
-	flex: 1 1 auto;
-}
-
-.moe_foto{
-	position: fixed;
-	top: 200px;
-	left: 140px;
-	width: 450px;
-	height: 550;
-	margin-top: -40px;
-}
-
-.fon {
-	text-align: center;
-	width: 1460px;
-	height: 400px;
-  }
-
-.sobi{
-	width: 320px;
-	padding-left: 950px;
-	padding-top: 50px;
-}
-.centr_izobr{
-	text-align: center;
-	width: 77%;
-	z-index: 12;
-	margin-left: 100px;
-}
-
-.centr_izobr2{
-	text-align: center;
-	z-index: 12;
-	width: 76.5%;
-	margin-right: -200px;
-}
-
-
-.vverh{
-	position: fixed;
-	right: 25px;
-	top:650px;
-	width: 130px;
-	z-index: 14;
-}
-
-.vverh2{
-	position: absolute;
-	right: 250px;
-	top: 1670px;
-	width: 65px;
-	z-index: 14;
-}
-
-t{
-	font-family: 'Trebuchet MS';
-	font-size: 39px;
-	color:rgb(255, 255, 255);
-	position: absolute;
-	left: 435px;
-	bottom: 233px;
-}
-
-v{
-	font-family: 'Trebuchet MS';
-	font-size: 39px;
-	color:rgb(255, 255, 255);
-	position: absolute;
-	left: 435px;
-	bottom: 148px;
-}
-
-/* .scrolling-wrapper {
-	overflow-x: scroll;
-	overflow-y:scroll;
-	white-space: nowrap;
-  
-	.card {
-	  display:inline-flex;
-	  text-align: center;
-	}
-}
-
-.risunki{
-	height: 700px;
-	position:absolute;
-	left: 175px;
-	top: 500px;
-} */
-
-/* для карандаша */
-
-  .slider-container__pencil {
-	position: relative;
-	width: 30%;
-	height: 100%;
-	margin: 0 auto;
-	overflow: hidden;
-	z-index: 22;
-	top: -8930px;
-	left: 0px;
-  }
-  
-  .slider__pencil {
-	display: flex;
-	transition: transform 0.5s ease-in-out;
-  }
-  
-  .slider__pencil img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	margin: auto;
-  }
-  
-  .prev-button,
-  .next-button {
-	position: absolute;
-	top: 55%;
-	transform: translateY(-50%);
-	width: 50px;
-	height: 50px;
-	background-color: white;
-	border: 2;
-	font-size: 36px;
-	color: black;
-  }
-  
-  .prev-button {
-	left: 20px;
-	margin-left: -20px;
-  }
-  
-  .next-button {
-	right: 20px;
-	margin-right: -20px;
-  }
-
-/* модальное окно */
-
-.modal {
-	position:fixed;
-	left:0;
-	top:0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(73, 28, 131, 0.4);
-	z-index: 35;
-  }
-
-.modal_content {
-	width: 40%;
-	height: 31%;
-	margin: 16.4% auto;
-	background-color:rgb(142, 127, 156);
-  }
-
-.close {
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 55px;
-	color: rgb(211, 14, 175);
-	float: right;
-	cursor: grab;
-	padding-right: 15px;
-	padding-top: -15px;
-  }
-
-h1 {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 28px;
-	color:rgb(255, 255, 255);
-	position: absolute;
-	z-index: 36;
-	left: 500px;
-	top: 240px;
-}
-
-/* для масла, не работает */
-
-  .slider-container__maslo {
-	position: relative;
-	width: 30%;
-	height: 100%;
-	margin: 0 auto;
-	overflow: hidden;
-	z-index: 22;
-	top: -8730px;
-	left: 0px;
-  }
-  
-  .slider__maslo {
-	display: flex;
-	transition: transform 0.5s ease-in-out;
-  }
-  
-  .slider__maslo img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	margin: auto;
-  }
-
-  .prev-button,
-  .next-button {
-	position: absolute;
-	top: 55%;
-	transform: translateY(-50%);
-	width: 50px;
-	height: 50px;
-	background-color: white;
-	border: 2;
-	font-size: 36px;
-	color: black;
-  }
-  
-  .prev-button {
-	left: 20px;
-  }
-  
-  .next-button {
-	right: 20px;
-  }

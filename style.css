@@ -46,12 +46,15 @@ ul {
  flex: 1 1 auto; 
 } 
  
-.moe_foto{  
- width: 30vw; 
- margin-left: 164px;
- margin-top: 160px;
- background-size: cover;
-} 
+.moe_foto {
+    width: 30vw;  /* Примерный размер, вы можете подстроить */
+    margin-left: 164px;
+    margin-top: 160px;
+    background-size: cover;
+    transition: all 0.3s ease;  /* Плавный переход между изображениями */
+    cursor: pointer;
+}
+
 
 .background-main {
     background-image: url("./images/fon.png");
@@ -112,6 +115,14 @@ ul {
  z-index: 12; 
  margin-left: 110px; 
 } 
+
+.centr_izobr2{ 
+    margin-top: 100px;
+    text-align: center; 
+    width: 77%; 
+    z-index: 12; 
+    margin-left: 110px; 
+   } 
  
 .vverh{ 
  position: fixed; 
@@ -409,6 +420,11 @@ a:hover {
         left: 25%;
     }
 }
+
+
+
+
+
 
 
 

@@ -15,7 +15,7 @@ ul {
     color:rgb(255, 255, 255); 
 } 
  
-p { 
+/* p { 
  font-family:'Trebuchet MS'; 
  font-weight:700; 
     font-size: 118px; 
@@ -25,16 +25,13 @@ p {
  left: 30px; 
  top: 20px; 
  transform: (30px,100px); 
-} 
+}  */
  
 .header__logo { 
  max-width: 70px; 
- margin-left: -135px; 
+ margin-right: 20px;
 } 
  
-.menu_list{ 
- text-align: center;
-} 
 
 .menu__list a {
     display: inline-block; /* Делаем элементы горизонтальными */
@@ -49,74 +46,81 @@ p {
  flex: 1 1 auto; 
 } 
  
-.moe_foto{ 
- position: fixed; 
- top: 200px; 
- left: 140px; 
- width: 450px; 
- height: 550; 
- margin-top: -40px; 
+.moe_foto{  
+ width: 30vw; 
+ margin-left: 164px;
+ margin-top: 160px;
+ background-size: cover;
 } 
+
+.background-main {
+    background-image: url("./images/fon.png");
+    background-repeat: repeat;
+}
+
+.main-column {
+    display: flex;
+    gap: 20px;
+}
+
+@media (width < 800px) {
+    .main-column {
+        flex-direction: column;
+    }
+}
+
+/* Основной стиль для навигационной панели */
+.navbar {
+    /* margin-left: 100px; */
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+    padding: 10px 20px;
+    position: fixed; /* Панель закреплена в верхней части */
+    top: 0;
+    left: 0;
+    width: 100%; /* Полная ширина */
+    z-index: 1000; /* Поверх всех элементов */
+    display: flex;
+    justify-content: space-between; /* Разделить элементы по краям */
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Тень под панелью */
+}
+
+.portfolio {
+    margin-top: 140px;
+    font-size: 7vw;
+    font-family:'Trebuchet MS'; 
+    font-weight:700; 
+    color: #f2c6ff;
+}
  
 .fon { 
  text-align: center; 
- width: 1460px; 
- height: 400px; 
+ width: 100vw; 
+ height: 100vh; 
   } 
  
 .sobi{ 
- width: 320px; 
- padding-left: 950px; 
- padding-top: 50px; 
+ width: 22vw;
+ margin-top: 560px;
+ margin-left: -270px;
 } 
 
 .centr_izobr{ 
  text-align: center; 
  width: 77%; 
  z-index: 12; 
- margin-left: -30px; 
+ margin-left: 110px; 
 } 
  
 .vverh{ 
  position: fixed; 
- right: 25px; 
- top:650px; 
- width: 130px; 
+ right: 10px; 
+ top:670px; 
+ width: 100px; 
  z-index: 14; 
 } 
  
-.vverh2{ 
- position: absolute; 
- right: 250px; 
- top: 1670px; 
- width: 65px; 
- z-index: 14; 
-} 
- 
-/* Стиль для ссылок */
-.link-telegram, .link-vk {
-    font-family: 'Trebuchet MS';
-    font-size: 39px;
-    color: #c300ff;  /* Основной цвет ссылки */
-    position: absolute;
-    text-decoration: none;
-}
-
-.link-telegram {
-    left: 435px;
-    bottom: 224px;
-}
-
-.link-vk {
-    left: 435px;
-    bottom: 142px;
-}
-
-/* Эффект при наведении */
-.link-telegram:hover, .link-vk:hover {
-    color: #ffffff;  /* Цвет при наведении */
-    text-decoration: underline;  /* Подчеркивание при наведении */
-}
  
 /* модальное окно */ 
  
@@ -131,9 +135,9 @@ p {
   } 
  
 .modal_content { 
- width: 40%; 
- height: 31%; 
- margin: 16.4% auto; 
+ width: 40vw; 
+ height: 15vw; 
+ margin: 20% auto; 
  background-color:rgb(142, 127, 156); 
   } 
  
@@ -144,17 +148,15 @@ p {
  float: right; 
  cursor: grab; 
  padding-right: 15px; 
- padding-top: -15px; 
+ margin-top: -64px; 
   } 
  
 h1 { 
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
  font-size: 28px; 
  color:rgb(255, 255, 255); 
- position: absolute; 
  z-index: 36; 
- left: 500px; 
- top: 240px; 
+ padding-top: 10px;
 } 
  
 /*слайдур №1,№2,№3*/ 
@@ -162,15 +164,17 @@ h1 {
 .slider1 { 
     position: relative; 
     width: 450px; 
-    margin: 440px auto; 
+    margin: 530px auto; 
     overflow: hidden; 
-    border-radius: 10px; 
+    border-radius: 10px;
+    margin-left: 570px; 
 } 
  
 .slider2 { 
     position: relative; 
     width: 470px; 
-    margin: -240px auto; 
+    margin: -360px auto; 
+    margin-left: 570px;
     overflow: hidden; 
     border-radius: 10px; 
 } 
@@ -178,7 +182,8 @@ h1 {
 .slider3 { 
     position: relative; 
     width: 450px; 
-    margin: 450px auto; 
+    margin: 600px auto; 
+    margin-left: 570px;
     overflow: hidden; 
     border-radius: 10px; 
 } 
@@ -229,18 +234,43 @@ h1 {
     left: 0; 
     width: 76.5%; 
     margin-top: 105px; 
-    margin-left: 160px; 
+    margin-left: 230px; 
     object-fit: contain; /* Помещает изображение полностью, сохраняя его пропорции */ 
 }
 
+/* Стиль для ссылок */
+.link-telegram, .link-vk {
+    font-family: 'Trebuchet MS';
+    font-size: 39px;
+    color: #c300ff;  /* Основной цвет ссылки */
+    text-decoration: none;
+}
+
+.link-telegram {
+    font-size: 3vw;
+    margin-right: 100px;
+    top: 405px;
+}
+
+.link-vk {
+    font-size: 3vw;
+    margin-left: -100px;
+    margin-top: -100px;
+    z-index: 100;
+}
+
+/* Эффект при наведении */
+.link-telegram:hover, .link-vk:hover {
+    color: #ffffff;  /* Цвет при наведении */
+    text-decoration: underline;  /* Подчеркивание при наведении */
+}
 
 /* стили для tel */
 .phone {
     font-family: 'Trebuchet MS'; 
-    font-size: 39px; 
-    position: absolute; 
-    left: 708px; 
-    bottom: 142px;
+    font-size: 3vw;  
+    left: 70px; 
+    margin-bottom: 100px;
     color: #c300ff;
     text-decoration: none; 
 }
@@ -253,11 +283,10 @@ h1 {
 /* Стили для mailto */
 span {
     font-family: 'Trebuchet MS'; 
-    font-size: 39px; 
-    position: absolute; 
-    left: 708px; 
-    bottom: 223px;
-    color: #c300ff;
+    font-size: 3vw; 
+    left: 780px; 
+    bottom: 500px;
+    color: #f001b8;
     text-decoration: none; 
 }
 
@@ -286,4 +315,102 @@ a:hover {
     color: #c300ff; /* Цвет при наведении */
     text-decoration: underline; /* Подчеркивание при наведении */
 }
+
+/**/
+/* Фон */
+.background {
+    position: relative; /* Создаём основу для абсолютного позиционирования внутри */
+    background-image: url('./images/svaz.png'); /* Укажите ваш фон */
+    background-size: cover; /* Растянуть фон, сохраняя пропорции */
+    background-position: center; /* Центровка фона */
+    background-repeat: no-repeat; /* Отключаем повторение */
+    width: 76%; /* Полная ширина экрана */
+    height: 76vh; /* Полная высота экрана */
+    margin-left: 225px;
+}
+
+/* Контейнер элементов */
+.elements-container {
+    position: relative; /* Контейнер с координатной системой */
+    width: 100%; /* Растягиваем по ширине экрана */
+    height: 100%; /* Растягиваем по высоте экрана */
+}
+
+/* Свободное позиционирование каждого элемента */
+.link-telegram {
+    position: absolute;
+    top: 69%; /* Расстояние сверху */
+    left: 23%; /* Расстояние слева */
+    font-family: 'Trebuchet MS';
+    font-size: 2.5vw; /* Адаптивный размер шрифта */
+    color: #c300ff;
+    text-decoration: none;
+}
+
+.link-vk {
+    position: absolute;
+    top: 102%; /* Расстояние сверху */
+    left: 32%; /* Расстояние слева */
+    font-family: 'Trebuchet MS';
+    font-size: 2.5vw; /* Адаптивный размер шрифта */
+    color: #c300ff;
+    text-decoration: none;
+}
+
+.mailto-link span {
+    position: absolute;
+    top: 70%; /* Расстояние сверху */
+    left: 50%; /* Расстояние слева */
+    font-family: 'Trebuchet MS';
+    font-size: 2.5vw; /* Адаптивный размер шрифта */
+    color: #f001b8;
+    text-decoration: none;
+}
+
+.phone {
+    position: absolute;
+    top: 50%; /* Расстояние сверху */
+    left: 50%; /* Расстояние слева */
+    font-family: 'Trebuchet MS';
+    font-size: 2.5vw; /* Адаптивный размер шрифта */
+    color: #c300ff;
+    text-decoration: none;
+}
+
+/* Эффекты при наведении */
+.link-telegram:hover, .link-vk:hover, .mailto-link:hover span, .phone:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 800px) {
+    .link-telegram, .link-vk, .mailto-link span, .phone {
+        font-size: 4vw; /* Увеличиваем шрифт на мобильных */
+    }
+
+    .link-telegram {
+        top: 15%; /* Поднимаем выше */
+        left: 10%;
+    }
+
+    .link-vk {
+        top: 25%; /* Поднимаем выше */
+        left: 15%;
+    }
+
+    .mailto-link span {
+        top: 35%; /* Поднимаем выше */
+        left: 20%;
+    }
+
+    .phone {
+        top: 45%; /* Поднимаем выше */
+        left: 25%;
+    }
+}
+
+
+
+
 

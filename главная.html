@@ -22,7 +22,16 @@
     </header>
     <div class="main-column">
         <img id="moe_foto" class="moe_foto" src="./images/ya2.png" alt="это я">
-        <!-- <img class='fon' src="./images/fon.png"> -->
+
+        <script>
+            document.getElementById("moe_foto").addEventListener("mouseover", function() {
+                this.src = "./images/ya.png";
+            });
+            document.getElementById("moe_foto").addEventListener("mouseout", function() {
+                this.src = "./images/ya2.png";
+            });
+        </script>
+        
         <p class="portfolio">ПОРТФОЛИО</p>
         <img class='sobi' src="./images/соби4.png">
     </div>

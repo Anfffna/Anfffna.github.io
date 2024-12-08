@@ -9,33 +9,26 @@ close.onclick = function() {
     modal.style.display = "none";
 };
 
+
 // ===== Изменение фото на главной странице при наведении =====
 
-// Добавляем обработчики событий после загрузки страницы
 document.addEventListener("DOMContentLoaded", function() {
-    // Находим элемент с фото
     const foto = document.getElementById("moe_foto");
 
     if (foto) {
-        // Логируем успешное нахождение элемента
-        console.log("Элемент moe_foto найден");
-
-        // Изменяем фото при наведении
         foto.addEventListener("mouseover", function() {
-            console.log("Наведение на изображение");
-            this.src = "./images/ya.png"; // Новое изображение
+            this.src = "./images/ya.png"; // Указываем путь к новому изображению
         });
 
-        // Возвращаем исходное фото при убирании курсора
         foto.addEventListener("mouseout", function() {
-            console.log("Убрал курсор с изображения");
-            this.src = "./images/ya2.png"; // Исходное изображение
+            this.src = "./images/ya2.png"; // Возвращаем исходное изображение
         });
     } else {
-        // Логируем, если элемент не найден
-        console.log("Элемент moe_foto не найден");
+        console.error("Элемент с id='moe_foto' не найден.");
     }
 });
+
+
 
 // ===== Слайдеры =====
 

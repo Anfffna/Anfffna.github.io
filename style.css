@@ -350,7 +350,7 @@ a:hover {
 /* Свободное позиционирование каждого элемента */
 .link-telegram {
     position: absolute;
-    top: 69%; /* Расстояние сверху */
+    top: 64%; /* Расстояние сверху */
     left: 23%; /* Расстояние слева */
     font-family: 'Trebuchet MS';
     font-size: 2.5vw; /* Адаптивный размер шрифта */
@@ -360,7 +360,7 @@ a:hover {
 
 .link-vk {
     position: absolute;
-    top: 102%; /* Расстояние сверху */
+    top: 96%; /* Расстояние сверху */
     left: 32%; /* Расстояние слева */
     font-family: 'Trebuchet MS';
     font-size: 2.5vw; /* Адаптивный размер шрифта */
@@ -370,7 +370,7 @@ a:hover {
 
 .mailto-link span {
     position: absolute;
-    top: 70%; /* Расстояние сверху */
+    top: 64%; /* Расстояние сверху */
     left: 50%; /* Расстояние слева */
     font-family: 'Trebuchet MS';
     font-size: 2.5vw; /* Адаптивный размер шрифта */
@@ -443,6 +443,16 @@ html {
         transform: translateX(-50%) rotate(360deg); /* Вращение на 360 градусов */
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

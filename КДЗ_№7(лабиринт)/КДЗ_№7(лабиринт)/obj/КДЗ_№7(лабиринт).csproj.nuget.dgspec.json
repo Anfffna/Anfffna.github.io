@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pokemon's\\Desktop\\коды на С# (кр, дз)\\ДЗ\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт).csproj": {}
+    "C:\\Users\\Pokemon's\\Documents\\GitHub\\Anfffna.github.io\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт).csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pokemon's\\Desktop\\коды на С# (кр, дз)\\ДЗ\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт).csproj": {
+    "C:\\Users\\Pokemon's\\Documents\\GitHub\\Anfffna.github.io\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pokemon's\\Desktop\\коды на С# (кр, дз)\\ДЗ\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт).csproj",
+        "projectUniqueName": "C:\\Users\\Pokemon's\\Documents\\GitHub\\Anfffna.github.io\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт).csproj",
         "projectName": "КДЗ_№7(лабиринт)",
-        "projectPath": "C:\\Users\\Pokemon's\\Desktop\\коды на С# (кр, дз)\\ДЗ\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт).csproj",
+        "projectPath": "C:\\Users\\Pokemon's\\Documents\\GitHub\\Anfffna.github.io\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт).csproj",
         "packagesPath": "C:\\Users\\Pokemon's\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pokemon's\\Desktop\\коды на С# (кр, дз)\\ДЗ\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт)\\obj\\",
+        "outputPath": "C:\\Users\\Pokemon's\\Documents\\GitHub\\Anfffna.github.io\\КДЗ_№7(лабиринт)\\КДЗ_№7(лабиринт)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pokemon's\\AppData\\Roaming\\NuGet\\NuGet.Config",

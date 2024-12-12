@@ -164,7 +164,7 @@ ul {
  
 h1 { 
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
- font-size: 28px; 
+ font-size: 26px; 
  color:rgb(255, 255, 255); 
  z-index: 36; 
  padding-top: 10px;
@@ -350,7 +350,7 @@ a:hover {
 /* Свободное позиционирование каждого элемента */
 .link-telegram {
     position: absolute;
-    top: 69%; /* Расстояние сверху */
+    top: 64%; /* Расстояние сверху */
     left: 23%; /* Расстояние слева */
     font-family: 'Trebuchet MS';
     font-size: 2.5vw; /* Адаптивный размер шрифта */
@@ -360,7 +360,7 @@ a:hover {
 
 .link-vk {
     position: absolute;
-    top: 102%; /* Расстояние сверху */
+    top: 96%; /* Расстояние сверху */
     left: 32%; /* Расстояние слева */
     font-family: 'Trebuchet MS';
     font-size: 2.5vw; /* Адаптивный размер шрифта */
@@ -370,7 +370,7 @@ a:hover {
 
 .mailto-link span {
     position: absolute;
-    top: 70%; /* Расстояние сверху */
+    top: 64%; /* Расстояние сверху */
     left: 50%; /* Расстояние слева */
     font-family: 'Trebuchet MS';
     font-size: 2.5vw; /* Адаптивный размер шрифта */
@@ -421,6 +421,28 @@ a:hover {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.rotating-star {
+    position: absolute;
+    top: 225px; /* Настройте позицию, чтобы звезда была на уровне с "ПОРТФОЛИО" */
+    left: 88%; /* Центрируем горизонтально */
+    transform: translateX(-50%); /* Центрируем относительно середины экрана */
+    width: 53px; /* Размер звезды */
+    animation: rotate 5s linear infinite; /* Анимация вращения */
+}
+
+/* Ключевые кадры для анимации */
+@keyframes rotate {
+    from {
+        transform: translateX(-50%) rotate(0deg); /* Начальная позиция */
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg); /* Вращение на 360 градусов */
+    }
+}
 
 
 

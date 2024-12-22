@@ -29,6 +29,25 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+//поле ввода
+// JavaScript для динамического добавления текста и поля ввода (если необходимо)
+document.addEventListener('DOMContentLoaded', () => {
+    const inputContainer = document.createElement('div');
+    inputContainer.classList.add('input-container');
+
+    // Создаем поле ввода
+    const inputField = document.createElement('input');
+    inputField.type = 'text';
+    inputField.classList.add('input-field');
+    inputField.placeholder = 'Ваше имя...';
+
+    // Добавляем текст и поле ввода в контейнер
+    inputContainer.appendChild(inputText);
+    inputContainer.appendChild(inputField);
+
+});
+
+
 
 // ===== Слайдеры =====
 

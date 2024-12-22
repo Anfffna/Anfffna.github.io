@@ -444,7 +444,23 @@ html {
     }
 }
 
+/* Контейнер для поля ввода и текста */
+.input-container {
+    position: fixed;
+    bottom: 250px;  /* Отступ от низа */
+    right: 20px;    /* Отступ от правого края */
+    text-align: center;
+}
 
+/* Стили для поля ввода */
+.input-field {
+    width: 260px;
+    padding: 20px;
+    border: 6px solid #f001b8;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-right: 424px;
+}
 
 
 

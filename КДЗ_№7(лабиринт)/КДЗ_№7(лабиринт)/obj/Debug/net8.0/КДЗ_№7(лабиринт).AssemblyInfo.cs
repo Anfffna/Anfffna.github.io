@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("КДЗ_№7(лабиринт)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+835ed261db0499944f64cd9e27f8c13535c4a05e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcce2f2050a3976bbb871b4386016af529dff471")]
 [assembly: System.Reflection.AssemblyProductAttribute("КДЗ_№7(лабиринт)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("КДЗ_№7(лабиринт)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
